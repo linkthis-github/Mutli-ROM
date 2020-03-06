@@ -16,13 +16,13 @@ on:
       - master
     paths:
       - '.config'
-#  schedule:
-#    - cron: 0 8 * * 5
+  schedule:
+    - cron: 30 21 * * 5
 #  watch:
 #    types: started
 
 env:
-  REPO_URL: https://github.com/coolsnowwolf/lede
+  REPO_URL: https://github.com/linkthis-github/OpenWrt-WEEKLY.git
   REPO_BRANCH: master
   CONFIG_FILE: .config
   DIY_SH: diy.sh
