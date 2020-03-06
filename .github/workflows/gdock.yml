@@ -108,5 +108,5 @@ jobs:
       uses: actions/upload-artifact@master
       if: steps.organize.outputs.status == 'success' && !cancelled()
       with:
-        name: OpenWrt_firmware
+        name: G-Dock-Firmware
         path: ${{ env.FIRMWARE }}
