@@ -104,7 +104,7 @@ jobs:
       if: steps.organize.outputs.status == 'success' && !cancelled()
       with:
         name: Acrh17-Firmware
-          path: ${{ env.FIRMWARE }}
+        path: ${{ env.FIRMWARE }}
 
     - name: Upload firmware to cowtransfer
       if: steps.organize.outputs.status == 'success' && env.UPLOAD_COWTRANSFER == 'true' && !cancelled()
